@@ -6,8 +6,7 @@ include '../encabezado.php';
 <div align="center"
 	STYLE="background-color: brown; width: 80%; position: absolute; top: 20%; left: 10%;">
 <br>
-<!--  <a href="list_user.php">Listado de Usuarios</a> <br>
-<a href="list_user_type.php">Listado de Tipos de Usuarios</a><br>.-->
+
 
 
 <form action="list_user.php"><font color="White" size="7"> 
