@@ -41,10 +41,10 @@ else {
 	$func=1;
 }
 if(isset($_GET['id'])){
-	conectar('pp3_db1');
+	
 	$id=$_GET['id'];
 	$query="select * from user where id=$id";
-	$respuesta=mysql_query($query);
+	$respuesta=conectar($query);
 	if (!$respuesta){
 		echo 'fallo'.mysql_error();
 	}

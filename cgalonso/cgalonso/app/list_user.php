@@ -27,9 +27,10 @@ if (isset($_GET['id'])){
 }
 
 function mostrar_user_type($ids){
-	conectar('pp3_db1');
+	//conectar('pp3_db1');
 	$qry="select * from  user_type where id=$ids";
-	$rta=mysql_query($qry);
+	//$rta=mysql_query($qry);
+	$rta=conectar($qry);
 	if (!$rta){
 		echo 'fallo'.mysql_error();
 	}
@@ -41,7 +42,7 @@ function mostrar_user_type($ids){
 }
 
 function mostrar_campos(){
-	conectar('pp3_db1');
+	//conectar('pp3_db1');
 	/////////////////////Paginacion/////////////////////////////////////
 	$largo=10;
 	if (isset($_GET['var'])){
@@ -55,7 +56,8 @@ else
 }
 
 $query="SELECT  count(user.id)as cantidad FROM user";
-	$respuesta=mysql_query($query);
+	//$respuesta=mysql_query($query);
+	$respuesta=conectar($query);
 	
 while($fila = mysql_fetch_array($respuesta))
 {
@@ -72,7 +74,8 @@ $z=1;
 	
 	///////////////////////////////////////////////////////////////////////////
 	$query="select * from  user limit $val,$largo";
-	$respuesta=mysql_query($query);
+	//$respuesta=mysql_query($query);
+	$respuesta=conectar($query);
 	if (!$respuesta){
 		echo 'fallo'.mysql_error();
 	}
@@ -92,13 +95,15 @@ $z=1;
 </tr>
 		<?php
 		}?>
-		<tr><td><?php echo "Registros:".$cant;?></td><td>
+		<tr><td><?php echo "Encontrados: ".$cant." Registros";?></td><td>
 		<?php $z=1;
 		echo "Pagina:".$p." </td><td>";
+		echo "<a href=list_user.php?var=1><<-</a>";
 while ($z<=$pag){
 	echo "<a href=list_user.php?var=$z>".$z."-</a>";
 	$z=$z+1;
 }?>
+	<a href=list_user.php?var=<?php echo $pag;?>>>></a>
 		</td></tr>
 	<?php }
 

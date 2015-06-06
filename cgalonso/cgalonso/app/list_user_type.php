@@ -21,9 +21,10 @@ unset ($_SESSION['add_usr_type']);
 unset ($_SESSION['del_usr_type']);
 unset ($_SESSION['edit_usr_type']);
 function mostrar_campos(){
-	conectar('pp3_db1');
+	//conectar('pp3_db1');
 	$query="select * from  user_type";
-	$respuesta=mysql_query($query);
+	//$respuesta=mysql_query($query);
+	$respuesta=conectar($query);
 	if (!$respuesta){
 		echo 'fallo'.mysql_error();
 	}
