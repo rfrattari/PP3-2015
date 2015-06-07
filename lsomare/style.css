@@ -1,0 +1,97 @@
+body {
+    width: 500px;
+    margin: auto;
+    padding-left: 11em;
+    font-family: Georgia, "Arial",
+        Times, serif;
+    color: purple;
+    background-color:  	#66CDAA }
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+h3 {
+    font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black }
+ul.navbar a {
+    text-decoration: none }
+a:link {
+    color: #000000 }
+a:visited {
+    color: #000000 }
+
+
+.alta{
+    border: 1px solid #CED5D7;
+    border-radius: 3px;
+    padding: 20px 0px 0px;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+}
+.alta label{
+    display: block;
+    font-weight: bold;
+}
+.alta div{
+    margin-bottom: 10px;
+}
+.alta input[type='text'], .alta textarea{
+    padding: 4px 3px;
+    width: 200px;
+    border: 1px solid #CED5D7;
+    resize: none;
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+.alta input[type='password'], .alta textarea{
+    padding: 4px 3px;
+    width: 200px;
+    border: 1px solid #CED5D7;
+    resize: none;
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+.alta input[type='text']:focus, .alta textarea:focus{
+    outline: none;
+    box-shadow:0 0 0 3px #dde9ec;
+}
+.alta input[type='submit']{
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+
+    background: #e4f1f6;
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
+}
+.alta input[type='submit']:hover{
+    background: #edfcff;
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
+}
+.alta input[type='submit']:active{
+    background: #cfe6ef;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+
+table tr:nth-child(odd){
+    background-color:  	#99CCCC;
+}
+
+table tr:nth-child(even){
+    background-color:  	#CCCCFF;
+}
