@@ -34,9 +34,9 @@ remote: Total 119 (delta 33), reused 108 (delta 27), pack-reused 0
 Receiving objects: 100% (119/119), 40.21 KiB, done.
 Resolving deltas: 100% (33/33), done.
 ```
--Esto ya les ha generado su repositorio local ya vinculado con github.
+- Esto ya les ha generado su repositorio local ya vinculado con github.
 
--Ubique su carpeta personal para empezar a trabajar sobre ella.
+- Ubique su carpeta personal para empezar a trabajar sobre ella.
 
 ####Enviar cambios y recibir actualizaciones.
 
