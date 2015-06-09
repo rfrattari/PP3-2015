@@ -1,10 +1,11 @@
 <?php
 include '../encabezado.php';
 include 'conexion.php';
-conectar('pp3_db1');
+//conectar('pp3_db1');
 $id=$_GET['id'];
 $query="select * from user_type where id=$id";
-$respuesta=mysql_query($query);
+//$respuesta=mysql_query($query);
+$respuesta=conectar($query);
 if (!$respuesta){
 	echo 'fallo'.mysql_error();
 }

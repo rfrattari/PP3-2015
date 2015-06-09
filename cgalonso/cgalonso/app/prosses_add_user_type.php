@@ -3,7 +3,7 @@
 <?php
 
 include 'conexion.php';
-conectar('pp3_db1');
+//conectar('pp3_db1');
 session_start();
 $ut=$_POST['type'];
 
@@ -12,7 +12,8 @@ $ut=$_POST['type'];
 
 if ((strlen ($ut )>=0)&& ($ut!=" ")){
 	$query="insert into user_type (name) values ('$ut')";
-	$respuesta=mysql_query($query);
+	//$respuesta=mysql_query($query);
+	$respuesta=conectar($query);
 	if (!$respuesta){
 		$error= 'fallo'.mysql_error();
 
