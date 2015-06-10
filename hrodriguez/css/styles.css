@@ -1,0 +1,97 @@
+#login{
+	vertical-align: 50%;
+	border: 40x;
+	margin: 30px;
+	border-color: black;
+	float: right;
+	color: black;
+}
+
+.cajas{
+	text-align: center;
+	color: black;
+	font-weight: 8px;
+	float:right;
+}
+
+label{
+	float: left;
+
+}
+
+.input{
+	border: 0px;
+	padding: 0px;
+
+}
+
+.botones{
+width: 150px;
+height: 40px;
+background-color: #000000;
+padding: 10px 10px;
+text-decoration: none;
+border-radius: 10%;
+color: white;
+font-family: fantasy;
+
+}
+
+.login{
+
+	border-color: #000;
+
+}
+
+h1{
+	font-family: Arial;
+}
+
+ .fila{
+ 	background-color:#99ccff;
+ }
+       
+.filaalterna{
+	background-color:#99ccff;
+}
+  
+
+.fdg_sortable {
+	cursor:pointer;text-decoration:underline;color:#000;
+}
+
+h4{
+	float: right;
+	margin: 5px 0px;
+	font-family: Calibri;
+	background-color: #ccffff;
+	border-radius: 20%;
+	border-color: black;
+}
+
+body{
+	background-color: #3399ff;
+	float:left;
+	margin: 35px 300px;
+}
+
+.usuario{
+	position:absolute;
+	right:0px;
+	border: 4px;
+	border-color: white;
+}
+
+.grid{
+	border: 3px;
+	border-radius: 15%;
+	border-color: white;
+}
+
+
+.menu{
+	margin: 6px;
+	border-color: white;
+	padding: 10px;
+
+}
