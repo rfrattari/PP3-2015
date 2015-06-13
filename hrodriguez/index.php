@@ -14,17 +14,17 @@
 <fieldset class="login">
     <?php
     $link = conectarlocal();
-    if(empty($_SESSION['usuario_nombre'])) { // compruebo que las variables de sesión estén vacías        
+    if(empty($_SESSION['usuario_email'])) { // compruebo que las variables de sesión estén vacías        
     ?>
     <form name="login" action="comprobar.php" method="post" >
             <center>
             <H1>Login</H1>
             </center>
-             <fieldset class="input"><label name="lblusuario_nombre">Usuario </label><input class="cajas" type="text" name="usuario_nombre" size="20"></fieldset>
+             <fieldset class="input"><label name="lblusuario_email">Usuario </label><input class="cajas" type="text" name="usuario_email" size="20"></fieldset>
              <br>
             <fieldset class="input"><label name="lblusuario_clave">Contraseña </label><input class="cajas" type="password" name="usuario_clave" size="20"</label></fieldset>
             <br>
-            <a href="recuperar_contrasena.php">Recuperar contraseña</a><br />
+            <a href="recuperar_contrasena.php">Recuperar contraseña</a><br/>
             <center>
             <input class="botones" type="submit" name="enviar" value="Ingresar">
             </center> 
