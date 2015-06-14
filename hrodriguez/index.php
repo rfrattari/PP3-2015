@@ -20,9 +20,9 @@
             <center>
             <H1>Login</H1>
             </center>
-             <fieldset class="input"><label name="lblusuario_email">Usuario </label><input class="cajas" type="text" name="usuario_email" size="20"></fieldset>
+             <fieldset class="input"><label name="lblusuario_email">Usuario </label><input class="cajas" type="text" placeholder="Ingrese su usuario" value="" name="usuario_email" size="20"></fieldset>
              <br>
-            <fieldset class="input"><label name="lblusuario_clave">Contraseña </label><input class="cajas" type="password" name="usuario_clave" size="20"</label></fieldset>
+            <fieldset class="input"><label name="lblusuario_clave">Contraseña </label><input class="cajas" type="password" placeholder="Ingrese su contraseña" value=""  name="usuario_clave" size="20"</label></fieldset>
             <br>
             <a href="recuperar_contrasena.php">Recuperar contraseña</a><br/>
             <center>
