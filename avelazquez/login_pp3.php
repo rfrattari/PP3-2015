@@ -11,18 +11,18 @@
             <?php include("conexionbd.php"); ?>
 	    </div><!--div hide-->
 		
-		<div id="container">   
+			<div id="container">   
 			<div id="menu">
-			<nav>
-            	<a><img src="img/win.png" id="img_logo"></a>
-                <ul>
-					<div id="titulo">
-						<h1><b>SYSTEM USERS AND TYPES</b></h1>
-
-					</div>
-					<h1><id="titulo" align="center"><b>- ERROR DE ACCESO -</b></h1>
-               </ul>
-            </nav></div><!--div container-->
+	          	<img src="img/win.png" id="img_logo">
+               
+				<div id="titulo">
+					<h1><b>SYSTEM USERS AND TYPES</b></h1>
+				</div>
+				
+				<div id="subtitulo">
+					<h1><b>- ERROR DE ACCESO -</b></h1>
+				</div><!--div subtitulo-->
+	        </div><!--div menu-->
 		</div><!--div container-->
 			
 		
@@ -61,12 +61,14 @@
 						header("Location:list_user_guest_pp3.php");}
 				}
   			}
-			
-			#si falla validacion, mensaje siguiente
-			echo"Error de Logueo: Usuario o password incorrecto.";
-		?>
-			<a href='index.php'><br>Volver a intentarlo</a>	
-
+			?>
+			<!--si falla validacion, mensaje siguiente-->
+			<div id="centrar3">
+				<?php				
+					echo"Error de Logueo: Usuario o password incorrecto.";
+				?>
+				<a href='index.php'><br>Volver a intentarlo</a>	
+			</div><!--div centrar3-->			
 
     </body>
 </html>

@@ -30,10 +30,10 @@
                 session_start();
                 $_SESSION['sesionuno'] = array('name' == $name,
                                                 'email' == $email);
-                                                #'error' == $passerror);
+                                                
                 header('location: fail_pp3.php'); 
                 md5($pass);
-                      #$_GET['$name']
+                 
             }
             else{
                 echo "<br><br>Su nombre es: $name<br>";
@@ -56,6 +56,7 @@
         ?>
         
          <a href="form_in_pp3.php">Volver </a>
+	<?php include("footer_pp3.php"); ?>
     </body>
 </html>
 

@@ -30,6 +30,7 @@
         ?>
         
          <a href="form_in_user_type_pp3.php">Volver </a>
+	<?php include("footer_pp3.php"); ?>
     </body>
 </html>
 

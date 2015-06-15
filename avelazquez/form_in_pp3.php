@@ -8,15 +8,15 @@
     <body>
         <div id="hide">   <!--color letras BD OK = color fondo-->
             <?php include("conexionbd.php"); 
-		    $consulta = "SELECT * FROM USER_TYPE ";
-            $allusers = mysql_query($consulta);?>
+		        $consulta = "SELECT * FROM USER_TYPE ";
+                $allusers = mysql_query($consulta);?>
 	    </div><!--div hide-->
  
 		<?php 
 				include("header_pp3.php");
    		?> 
 
-        <div id="centrar">
+        <div id="centrar2">
         <form  method="post" action="process_form_pp3.php"> 
             <br> <br>
             
@@ -50,12 +50,12 @@
            
             <br> <br><br>
             <input type = "submit" value = "Aceptar"></input>
-            <br>
+            
             <input type="reset" value="Resetear Valores"/>
-        </form>
+        </form><br>
         <a href="list_user_pp3.php">Volver </a>
-        </div><!--div centrar-->
-         
+        </div><!--div centrar2-->
+         <?php include("footer_pp3.php"); ?>
         
         
         

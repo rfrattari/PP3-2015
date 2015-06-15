@@ -20,5 +20,6 @@
         	?>
 			<a href="form_in_pp3.php"><br>Volver a intenarlo </a>
    		</div><!--div centrar-->
+		<?php include("footer_pp3.php"); ?>
     </body>
 </html>
