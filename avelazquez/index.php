@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title><?php echo "INDEX" ?></title>
 		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    </head>
+	</head>
     
 	<body>
 		<div id="hide">   <!--color letras BD OK = color fondo-->
@@ -13,26 +13,26 @@
         
 		<div id="container">   
 			<div id="menu">
-			<nav>
-            	<a><img src="img/win.png" id="img_logo"></a>
-                <ul>
-					<div id="titulo">
-						<h1><b>SYSTEM USERS AND TYPES</b></h1>
-
-					</div>
-					<h1><id="titulo" align="center"><b>- LOGIN -</b></h1>
-               </ul>
-            </nav>
+	          	<img src="img/win.png" id="img_logo">
+               
+				<div id="titulo">
+					<h1><b>SYSTEM USERS AND TYPES</b></h1>
+				</div>
+				
+				<div id="subtitulo">
+					<h1><b>- LOGIN -</b></h1>
+				</div><!--div subtitulo-->
+	        </div><!--div menu-->
 		</div><!--div container-->
 			
 		
 
-        <div id="container2"> 
+        <div id="container2"> <!--ingresa franja celeste en la cual se posiciona el menu-->
 			
 		</div><!--div container2-->
 
         
-        <div id="centrar">
+        <div id="centrar2">
             <form  method="post" action="login_pp3.php"> 
             <br> <br>                     
 			  
@@ -44,9 +44,9 @@
             <input name = "pass" type = "password" placeholder = "Escriba su password aqui " required autofocus ></input>
             <br> <br><br> <br>
    
-            <input type = "submit" value = "Ingresar" ></input>
+            <input type = "submit" value = "Ingresar"></input>
 
-	    </div><!--div centrar-->
-
+	    </div><!--div centrar2-->
+		<?php include("footer_pp3.php"); ?>
    </body>
 </html>

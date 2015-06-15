@@ -10,21 +10,17 @@
 		<div id="hide">   <!--color letras BD OK = color fondo-->
             <?php include("conexionbd.php"); ?>
 	    </div><!--div hide-->
-
-
-<?php 
- //Crear sesión
- session_start();
- //Vaciar sesión
- $_SESSION = array();
- //Destruir Sesión
- session_destroy();
- //Redireccionar a login.php
- header("location: index.php");
-?>
-
-
-
+		
+		<?php 
+			 //Crear sesión
+			 session_start();
+			 //Vaciar sesión
+			 $_SESSION = array();
+			 //Destruir Sesión
+			 session_destroy();
+			 //Redireccionar a login.php
+			 header("location: index.php");
+		?>
 
     </body>
 </html>

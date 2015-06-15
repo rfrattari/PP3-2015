@@ -13,7 +13,7 @@
 				include("header_pp3.php");
    		?> 
 
-        <div id="centrar">
+        <div id="centrar2">
         	<form  method="post" action="process_form_user_type_pp3.php"> 
             	<br> <br>
                      
@@ -22,12 +22,12 @@
             	<br> <br>
    
             	<input type = "submit" value = "Aceptar"></input>
-            	<br>
+            	
             	<input type="reset" value="Resetear Valores"/>
-        	</form>
+        	</form><br>
         	<a href="list_user_type_pp3.php">Volver </a>
-        </div><!--div centrar-->
-
+        </div><!--div centrar2-->
+	<?php include("footer_pp3.php"); ?>
         
 	</body>
 </html>
